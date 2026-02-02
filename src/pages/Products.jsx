@@ -22,17 +22,18 @@ function Products() {
     return (
         <>
             <h2>Questa è la pagina dei prodotti</h2>
-            {products.map((product) => {
-                return (
-                    <>
-                        <div className="productCard">
-                            <img src={product.image} />
-                            <h3>{product.title}</h3>
-                            <p>{product.description}</p>
-                        </div>
-                    </>
-                );
-            })}
+            <div className="productContainer">
+                {products.map((product) => {
+                    return (
+                        <>
+                            <div className="productCard">
+                                <img src={product.image} />
+                                <h3>{product.title}</h3>
+                            </div>
+                        </>
+                    );
+                })}
+            </div>
         </>
     );
 }
