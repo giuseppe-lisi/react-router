@@ -1,4 +1,3 @@
-
 function AboutUs() {
     return (
         <>
