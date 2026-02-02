@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
     return (
         <div className="navbar">
@@ -10,3 +12,5 @@ function Navbar() {
         </div>
     );
 }
+
+export default Navbar;
