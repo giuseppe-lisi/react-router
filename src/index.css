@@ -24,18 +24,32 @@ a {
     color: orange;
 }
 
-img {
-    width: 100%;
-}
-
 .productContainer {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    gap: 15px;
+    gap: 25px;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 .productCard {
-    width: 15%;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(254, 246, 231);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cardImg {
+    height: 70%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
 }

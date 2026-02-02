@@ -27,7 +27,9 @@ function Products() {
                     return (
                         <>
                             <div className="productCard">
-                                <img src={product.image} />
+                                <div className="cardImg">
+                                    <img src={product.image} />
+                                </div>
                                 <h3>{product.title}</h3>
                             </div>
                         </>
