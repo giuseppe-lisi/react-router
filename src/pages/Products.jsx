@@ -25,9 +25,11 @@ function Products() {
             {products.map((product) => {
                 return (
                     <>
-                        <ul>
-                            <li key={product.id}>{product.title}</li>
-                        </ul>
+                        <div className="productCard">
+                            <img src={product.image} />
+                            <h3>{product.title}</h3>
+                            <p>{product.description}</p>
+                        </div>
                     </>
                 );
             })}
