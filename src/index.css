@@ -23,3 +23,19 @@ a {
 .active {
     color: orange;
 }
+
+img {
+    width: 100%;
+}
+
+.productContainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 15px;
+}
+
+.productCard {
+    width: 15%;
+}
