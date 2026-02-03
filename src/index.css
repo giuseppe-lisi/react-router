@@ -5,10 +5,28 @@
     font-family: sans-serif;
 }
 
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 30px;
+}
+
+.navbarDiv {
+    background-color: burlywood;
+}
+
+h2 {
+    padding-block: 20px;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 nav {
@@ -21,7 +39,7 @@ a {
 }
 
 .active {
-    color: orange;
+    color: rgb(227, 98, 0);
 }
 
 .productContainer {
@@ -34,11 +52,11 @@ a {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .productCard {
-    width: 200px;
+    width: 210px;
     height: 300px;
     background-color: rgb(254, 246, 231);
     border-radius: 5px;
@@ -53,4 +71,39 @@ h3 {
 
 img {
     width: 100%;
+}
+
+.homeBanner {
+    width: 100%;
+    height: 500px;
+    background-image: url("assets/images/Screenshot 2026-02-03 at 17.32.40.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleProduct {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.singleProductImg {
+    height: 300px;
+}
+
+.singleProductDesc {
+    font-size: 1.5rem;
+    width: 60%;
+}
+
+.productButtons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1.2rem;
 }

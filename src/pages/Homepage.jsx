@@ -1,7 +1,10 @@
 function Homepage() {
     return (
         <>
-            <h2>Questa è la Homepage</h2>
+            <div className="wrapper">
+                <h2>HOME</h2>
+            </div>
+            <div className="homeBanner"></div>
         </>
     );
 }

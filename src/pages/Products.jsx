@@ -22,20 +22,25 @@ function Products() {
 
     return (
         <>
-            <h2>Questa è la pagina dei prodotti</h2>
-            <div className="productContainer">
-                {products.map((product) => {
-                    return (
-                        <>
-                            <Link to={`/Products/${product.id}`} className="productCard">
-                                <div className="cardImg">
-                                    <img src={product.image} />
-                                </div>
-                                <h3>{product.title}</h3>
-                            </Link>
-                        </>
-                    );
-                })}
+            <div className="wrapper">
+                <h2>PRODOTTI</h2>
+                <div className="productContainer">
+                    {products.map((product) => {
+                        return (
+                            <>
+                                <Link
+                                    to={`/Products/${product.id}`}
+                                    className="productCard"
+                                >
+                                    <div className="cardImg">
+                                        <img src={product.image} />
+                                    </div>
+                                    <h4>{product.title}</h4>
+                                </Link>
+                            </>
+                        );
+                    })}
+                </div>
             </div>
         </>
     );
