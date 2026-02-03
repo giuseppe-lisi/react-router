@@ -8,7 +8,14 @@ function SingleProduct() {
 
     function getProduct() {
         const apiUrl = "https://fakestoreapi.com/products";
-        axios.get(`${apiUrl}/${id}`).then((res) => setProduct(res.data));
+        axios.get(`${apiUrl}/${id}`).then((res) => {
+            if (res.data) {
+                setProduct(res.data);
+            } else {
+                console.log("prodotto non esiste");
+                
+            }
+        });
     }
 
     useEffect(() => {
