@@ -1,21 +1,23 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function SingleProduct() {
     const { id } = useParams();
     const [product, setProduct] = useState({});
-
+    const navigate = useNavigate();
     function getProduct() {
         const apiUrl = "https://fakestoreapi.com/products";
-        axios.get(`${apiUrl}/${id}`).then((res) => {
-            if (res.data) {
-                setProduct(res.data);
-            } else {
-                console.log("prodotto non esiste");
-                
-            }
-        });
+        axios
+            .get(`${apiUrl}/${id}`)
+            .then((res) => {
+                if (res.data) {
+                    setProduct(res.data);
+                } else {
+                    navigate("/");               
+                }
+            })
+            .catch((err) => console.log(`errore: ${err}`));
     }
 
     useEffect(() => {
