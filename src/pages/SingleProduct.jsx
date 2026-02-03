@@ -22,6 +22,7 @@ function SingleProduct() {
                     <img src={product.image} />
                 </div>
                 <h3>{product.title}</h3>
+                <p>{product.description}</p>
             </div>
         </>
     );
